@@ -13,7 +13,7 @@
     <body >
         <div class="loading">
             <div class="loaded">
-                <img src="/images/Infinity-1s-200px.svg" alt="">
+                <img src="images/Infinity-1s-200px.svg" alt="">
             </div>
             
         </div>
@@ -100,15 +100,29 @@
                 <h2>Contact</h2>
                 <div class="contact">
                     <div class="form">
-                       <form action="">
-                           <input type="text" name="Name" id="Name" placeholder="Name">
-                           <br>
-                           <input type="email" name="email" id="" placeholder="Email">
-                           <br>
-                           <textarea name="Message" id="" cols="30" rows="10" placeholder="Message"></textarea>
-                           <br>
-                           <input type="submit" class="button" id="button" value="Submit">
-                       </form>
+                       <div class="message-box">
+                        <form action="">
+                            <div class="user-box">
+                                <input type="text" name="Name" id="Name">
+                                <label for="Name">Name</label>
+                            </div>
+                            <div class="user-box">
+                                <input type="email" name="email" id="email">
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="user-box">
+                                <textarea name="Message" id="message" cols="30" rows="10"></textarea>
+                                <label for="message">Message</label>
+                            </div>
+                            <a href="">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                Submit
+                            </a>
+                        </form>
+                       </div> 
                     </div>
                     <div class="socials">
                         <h3>..or look for me in</h3>
@@ -127,3 +141,14 @@
         <script src="/resources/app.js" defer></script>
     </body>
 </html>
+
+<!-- <form action="">
+    
+    <br>
+    
+    <br>
+    <textarea name="Message" id="" cols="30" rows="10" placeholder="Message"></textarea>
+    <br>
+    <input type="submit" class="button" id="button" value="Submit">
+</form> -->
+
