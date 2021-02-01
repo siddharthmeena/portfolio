@@ -104,12 +104,14 @@ nav,.about,.projects,.skills,.contact{
 .header .content{
     margin: auto;
 }
-.content p{
-    margin-top: 2%;
-    text-align: end;
-    font-size: 2rem;
-    color: white;
+h1 span{
+    opacity: 0;
+    transition: all 1s ease;
 }
+span.fade{
+    opacity: 1;
+}
+
 
 /* navbar section */
 
@@ -152,6 +154,13 @@ nav{
 .about .aboutContent{
     flex: 1;
     padding: 2%;
+    /* opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease-in-out; */
+}
+.afterContent{
+    opacity: 1;
+    transform: translateY(0);
 }
 .about:hover{
     box-shadow: 0 .5rem 1rem rgba(0,0,0,0.5);
