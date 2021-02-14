@@ -31,3 +31,21 @@ function complete(){
 }
 
 // for scroll effect
+
+
+function dynamicAbout(){
+    let aboutClass = document.querySelector('.aboutContent');
+    let aboutPostion = aboutClass.getBoundingClientRect().top;
+
+    let screenPostion = (window.innerHeight)/2;
+    if(screenPostion > aboutPostion){
+        aboutClass.classList.add("afterContent");
+    }
+}
+
+window.addEventListener('scroll',dynamicAbout);
+document.querySelector('.menu').addEventListener('click',function(){
+    this.classList.toggle('open');
+    document.querySelector('.hamburgur').classList.toggle('open');
+    document.querySelector('.overlay').classList.toggle('open');
+})
